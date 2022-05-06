@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <title>Desafio_Server</title>
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+  <section>
+
+
+
+    <div class="container col-12 col-sm-10  my-5  border bg-secondary" style="border-radius :3%;">
+
+
+      <div class="col-12 col-sm-12 container my-2 py-3 px-2 border bg-info text-body" style="border-radius :2%;" >
+        <div class="card-deck">
+          <div class="card btn-light mb-2">
+            <!-- CREAR -->
+            <div class="card-header justify-item-center">
+              <img src="scr/img/crear.svg" class="card-img-top" width="50px" height="150px">
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="text-center">Crear un archivo</h3>
+                <form action="http://localhost:8080/crear" target="_blank">
+                  <div class="form-group">
+                    <div class="form-group mt-3">
+                      Nombre del archivo
+                      <input name="archivo" class="form-control" id="archivo" />
+                    </div>
+
+                  </div>
+                  <div class="form-group">
+                    Contenido
+                    <textarea name="contenido" class="form-control" id="contenido" cols="15" rows="10"
+                      style="height: 80px;"></textarea>
+                  </div>
+                  <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary font-weight-bold">Crear archivo</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card btn-light mb-3">
+            <!-- LEER -->
+            <div class="card-header justify-item-center">
+              <img src="scr/img/leer.svg" class="card-img-top" width="50px" height="150px">
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="text-center">Leer un archivo</h3>
+                <form action="http://localhost:8080/leer" target="_blank">
+                  <div class="form-group mt-5">
+                    Nombre del archivo
+                    <input name="archivo" class="form-control" id="archivo" />
+                  </div>
+                  <div class="text-center mt-5">
+                    <button type="submit" class="btn btn-info font-weight-bold">Consultar archivo</button>
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card btn-light mb-3">
+            <!-- RENOMBRAR -->
+            <div class="card-header justify-item-center">
+              <img src="scr/img/editar.svg" class="card-img-top" width="50px" height="150px">
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="text-center">Renombrar un archivo</h3>
+                <form action="http://localhost:8080/renombrar" target="_blank">
+                  <div class="form-group">
+                    Nombre del archivo
+                    <input name="nombre" class="form-control" id="nombre" />
+                  </div>
+                  <div class="form-group">
+                    Nuevo nombre del archivo
+                    <input name="nuevoNombre" class="form-control" id="nuevoNombre" />
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-warning font-weight-bold">Renombrar archivo</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="card btn-light mb-3">
+            <!-- ELIMINAR -->
+            <div class="card-header justify-item-center">
+              <img src="scr/img/eliminar.svg" class="card-img-top" width="50px" height="150px">
+            </div>
+            <div class="card-body">
+              <div class="">
+                <h3 class="text-center">Eliminar un archivo</h3>
+                <form action="http://localhost:8080/eliminar" target="_blank">
+                  <div class="form-group mt-5">
+                    Nombre del archivo
+                    <input name="archivo" class="form-control" id="archivo" />
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-danger font-weight-bold">Eliminar archivo</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+
+</body>
+
+</html>
